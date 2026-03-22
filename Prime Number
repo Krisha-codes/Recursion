@@ -1,0 +1,17 @@
+class rprime
+{
+boolean prime (int N, int y)
+{
+if(N>y)
+{
+if(N%y == 0)
+{return false;}
+else
+{
+return prime(N, y+1);
+}
+}
+else
+{return true;}
+}
+}
