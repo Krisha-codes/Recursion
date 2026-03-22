@@ -1,0 +1,16 @@
+class Binary
+{
+int s, c=1;
+int bin(int n)
+{
+if(n==0)
+{return;}
+else
+{
+int m = n%2*c
+n=n/2;
+c=c*10;
+bin(n);
+}
+}
+}
