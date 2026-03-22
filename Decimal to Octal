@@ -1,7 +1,7 @@
-class Oct_Binary
+class Dec_Oct
 {
 int sum = 0, c=1;
-void bin(int n)
+void oct(int n)
 {
 if(n==0)
 {return;}
@@ -9,7 +9,7 @@ else
 {
 sum = sum + (n%8)*c;
 c=c*10;
-bin(n/8);
+oct(n/8);
 }
 }
 }
