@@ -1,0 +1,19 @@
+class binarySearch
+{
+int A[]= new int [10];
+int binsearch(int l, int u, int v)
+{
+if(l>u)
+return -1;
+else
+{
+int m = (u+l)/2;
+if(A[m]>v)
+return binsearch(u, m-1, v);
+else if(A[m]<v)
+return binsearch(m+1, u, v);
+else
+return 1;
+}
+}
+}
