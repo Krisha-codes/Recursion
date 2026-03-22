@@ -1,6 +1,6 @@
 class Binary
 {
-int s, c=1;
+int s=0, c=1;
 int bin(int n)
 {
 if(n==0)
