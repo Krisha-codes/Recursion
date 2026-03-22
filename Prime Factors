@@ -1,0 +1,18 @@
+class prime_factors
+{
+void factors(int n, int q)
+{
+if(n>1)
+{
+if(n%q==0)
+{
+System.out.print(q+"");
+factors(n/q,q);
+}
+else
+{
+factors(n, q+1);
+}
+}
+}
+}
