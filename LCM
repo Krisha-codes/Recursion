@@ -1,0 +1,16 @@
+class lcm
+{ int n1, n2;
+int getLcm(int l, int s)
+{
+  if(l!=s)
+{
+if(l>s)
+{l-=s;}
+else
+{s-=l;}
+return getLcm(l,s);
+}
+else
+{return n1*n2/l;}
+}
+}
