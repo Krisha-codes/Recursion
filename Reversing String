@@ -1,0 +1,12 @@
+class revString
+{
+  void rev(String s, int len)
+  {
+    if(len<s.length())
+      {
+        char ch = s.charAt(len);
+        System.out.print(ch);
+        rev(s,len+1);
+      }
+  }
+}
