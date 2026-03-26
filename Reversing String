@@ -6,7 +6,7 @@ class revString
       {
         char ch = s.charAt(len);
         System.out.print(ch);
-        rev(s,len+1);
+        rev(s,len-1);
       }
   }
 }
