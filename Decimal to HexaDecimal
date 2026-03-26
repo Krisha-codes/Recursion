@@ -1,0 +1,24 @@
+class DeciHex
+{ String hexa ="";
+  void convert(int n)
+{
+String v = "ABCDEF";
+if(n==0)
+{return n;}
+else
+{
+  int r = n%16;
+n/= 16;
+if(r>9)
+{
+int d = r-10;
+hexa = v.charAt(d) + hexa;
+}
+else
+{
+hexa = ""+ r+ hexa;
+}
+convert(v);
+}
+}
+}
