@@ -1,12 +1,12 @@
 class revString
 {
-  void rev(String s, int len)
-  {
-    if(len<s.length())
-      {
-        char ch = s.charAt(len);
-        System.out.print(ch);
-        rev(s,len-1);
-      }
+  String rev(String s, int len)
+ if(len <0)
+{return "";}
+else
+{
+char x = s.charAt(len-1);
+return x+rev(s.substring(0,len,1), len-1);
+}
   }
 }
